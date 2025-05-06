@@ -20,12 +20,12 @@ const cityList = [
 
     //ariyalurData ,
         //taluks
-          "Ariyalur",
+          // "Ariyalur",
           "Sendurai",
           "Udayarpalayam",
-          "Andimadam",
+         
         //towns: [
-          "Ariyalur",
+      
           "Jayankondam",
           "Sendurai",
           "Andimadam",
@@ -34,7 +34,7 @@ const cityList = [
           
           //const chengalpattuData = {
             //taluks: [
-              "Chengalpattu",
+              // "Chengalpattu",
               "Thiruporur",
               "Tambaram",
               "Madurantakam",
@@ -43,8 +43,8 @@ const cityList = [
               "Tirukalukundram",
             
            // towns: [
-              "Chengalpattu",
-              "Tambaram",
+              // "Chengalpattu",
+              // "Tambaram",
               "Pallavaram",
               "Maduranthakam",
               "Mahabalipuram",
@@ -379,3 +379,4 @@ const cityList = [
   ];
   
   export default cityList;
+

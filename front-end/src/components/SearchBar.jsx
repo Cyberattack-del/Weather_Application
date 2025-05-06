@@ -89,7 +89,7 @@ export default function SearchBar({ onSearch, error }) {
                 value={input}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyDown}
-                className={`w-full px-5 py-3 rounded-full ${inputStyle} placeholder-[var(--placeholder)] border border-black/20 backdrop-blur-md focus:outline-none focus:ring-2 text-sm shadow-md transition-all duration-300 ease-in-out`}
+                className={`w-full px-5 py-3 rounded-full ${inputStyle} placeholder-[var(--placeholder)] border border-l-white backdrop-blur-md focus:outline-none focus:ring-2 text-sm shadow-md transition-all duration-300 ease-in-out`}
                 autoFocus
               />
               {filteredCities.length > 0 ? (

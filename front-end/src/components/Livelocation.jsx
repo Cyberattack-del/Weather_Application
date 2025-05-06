@@ -41,14 +41,15 @@ const Livelocation = ({ onDetectLocation }) => {
   return (
     <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 mt-4 flex justify-center sm:justify-end">
       <button
-        onClick={confirmAndRequestLocation}
-        disabled={loading}
-        aria-label="Use my current location"
-        className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3  text-white text-sm sm:text-base font-semibold rounded-full shadow-md hover:shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <FiMapPin className="text-lg sm:text-xl" />
-        {loading ? 'Detecting...' : 'Use My Location'}
-      </button>
+  onClick={confirmAndRequestLocation}
+  disabled={loading}
+  aria-label="Use my current location"
+  className="flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 border border-white text-white text-sm sm:text-base font-semibold rounded-full shadow-md hover:shadow-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  <FiMapPin className="text-lg sm:text-xl" />
+  {loading ? 'Detecting...' : 'Use My Location'}
+</button>
+
     </div>
   );
 };

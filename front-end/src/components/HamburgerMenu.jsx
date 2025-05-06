@@ -45,22 +45,21 @@ const HamburgerMenu = ({
   };
 
   const isSubmenuOpen = ["notifications", "themes", "settings", "history"].includes(activeMenu);
-
+  
   const getMenuBgClass = () => {
     switch (currentTheme) {
       case "dark":
-        return "bg-gray-900 text-white";
+        return "bg-gray-900 text-white border border-white";
       case "neon":
-        return "bg-[#0f0f1b] text-[#39ff14] border border-[#39ff14]";
+        return "bg-[#0f0f1b] text-white border border-white"; // Changed from green to white
       default:
-        return "bg-white text-black";
+        return "bg-white text-black border border-white";
     }
   };
 
   const getBarColorClass = () => {
-    return currentTheme === "neon" ? "bg-[#39ff14]" : "bg-white";
+    return "bg-white";
   };
-
   const handleHamburgerClick = () => {
     if (isSubmenuOpen || location.pathname !== "/") {
       setActiveMenu(null);
@@ -94,9 +93,11 @@ const HamburgerMenu = ({
           <>
             <div
               className={`absolute w-full h-[5px] rounded transition-all duration-300 ${
-                activeMenu === "main" ? "rotate-45 top-3" : "top-0"
+                activeMenu === "main" ? " top-3" : "top-0"
               } ${getBarColorClass()}`}
             />
+            {/* -rotate-45 */}
+            {/* rotate-45 */}
             <div
               className={`absolute w-full h-[5px] rounded transition-all duration-300 ${
                 activeMenu === "main" ? "opacity-0" : "top-3"
@@ -104,7 +105,7 @@ const HamburgerMenu = ({
             />
             <div
               className={`absolute w-full h-[5px] rounded transition-all duration-300 ${
-                activeMenu === "main" ? "-rotate-45 top-3" : "top-6"
+                activeMenu === "main" ? " top-3" : "top-6"
               } ${getBarColorClass()}`}
             />
           </>

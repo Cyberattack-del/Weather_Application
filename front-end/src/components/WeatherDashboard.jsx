@@ -199,7 +199,8 @@ const WeatherDashboard = ({ setWeather }) => {
 
       <SearchBar onSearch={handleSearch} error={error} />
       <Livelocation onDetectLocation={handleDetectLocation} />
-
+     
+      {/* <WeatherDisplay/> */}
       {hasWeatherData && weather && forecast && (
         <WeatherDisplay weather={weather} forecast={forecast} />
       )}
