@@ -22,16 +22,18 @@ const ThemeMenu = () => {
   };
 
   return (
-    <div className="flex flex-col items-start gap-6 px-4 py-6">
+    <div className="flex flex-col items-start p-15  gap-6 px-10 py-18">
+
+      {/* top-6 p-10 gap-20 mt-4 ml-4 */}
       {/* Back Button */}
-      <button
+      {/* <button
         onClick={() => navigate("/")}
         className="flex items-center gap-2 px-4 py-2 text-sm rounded-md font-medium bg-gray-700 text-white hover:bg-gray-600 transition"
         aria-label="Go back to home"
       >
         <FaArrowLeft />
         Back to Home
-      </button>
+      </button> */}
 
       {/* Theme Buttons */}
       <button

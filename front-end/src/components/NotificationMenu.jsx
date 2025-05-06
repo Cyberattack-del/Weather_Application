@@ -64,24 +64,3 @@ function NotificationMenu() {
 }
 
 export default NotificationMenu;
-
-  {/* <AnimatePresence>
-        {open && (
-          <motion.div
-            className="mt-2 space-y-2"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-          >
-            {categories.map(({ name, icon, route }, i) => (
-              <div
-                key={i}
-                className="cursor-pointer bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-md shadow flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-600"
-                onClick={() => handleNavigate(route)}
-              >
-                {icon} <span className="font-medium">{name}</span>
-              </div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence> */}
