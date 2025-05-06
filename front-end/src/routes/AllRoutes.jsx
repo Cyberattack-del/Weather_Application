@@ -14,7 +14,7 @@ import ThemeMenu from "../components/ThemeMenu";
 const AllRoutes = ({
   selectedTheme,
   setSelectedTheme,
-  notifications,              // Added this line
+  notifications,              
   setNotification,
   setWeather,
   setUserSearched,

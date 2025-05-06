@@ -1,4 +1,3 @@
-
 export default function AQI({ aqi }) {
     if (aqi === null) return <p className="text-white text-lg">Loading AQI...</p>;
   

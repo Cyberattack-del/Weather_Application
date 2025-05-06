@@ -1,31 +1,3 @@
-// import React from 'react';
-
-// const GeneralUser = ({ condition }) => {
-//   const notifications = {
-//     clouds: [
-//       { text: 'Cloudy sky: No rain expected today', severity: 'info', time: '9:00 AM' }
-//     ],
-//     rain: [
-//       { text: 'Rain Alert: Carry umbrella', severity: 'warning', time: '8:45 AM' }
-//     ],
-//     clear: [
-//       { text: 'Clear skies: Enjoy the sun', severity: 'info', time: '9:00 AM' }
-//     ]
-//   };
-
-//   return (
-//     <div>
-//       {notifications[condition]?.map((note, index) => (
-//         <div key={index} className={`notification ${note.severity}`}>
-//           <strong>{note.time}:</strong> {note.text}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default GeneralUser;
-
 import React from 'react';
 import {
   WiDaySunny,
@@ -72,7 +44,7 @@ const getMotivationalLine = (condition) => {
     case 'thunderstorm': return "Stay safe now, and plan your next adventure!";
     case 'clouds': return "Clouds can’t slow your stride!";
     case 'mist': return "Caution is key — adventure wisely!";
-    default: return "Stay active, stay safe!";
+    default: return "Cloudy sky: No rain expected today. severity info, time 9:00 AM" ;
   }
 };
 
@@ -99,7 +71,7 @@ const GeneralUser = ({ condition }) => {
   const weatherNotes = notifications[condition] || [];
 
   return (
-    <div className="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-lg">
+    <div className="p-6 max-w-xl top-10 mx-auto bg-white rounded-xl shadow-lg">
       {/* Greeting Section */}
       <div className="mb-5">
         <h1 className="text-2xl font-bold text-gray-800">{getGreeting()}</h1>
