@@ -73,7 +73,7 @@ const HamburgerMenu = ({
   const menuItems = [
     { key: "notifications", icon: <FaBell />, label: "Notification" },
     { key: "themes", icon: <FaPalette />, label: "Theme" },
-    { key: "settings", icon: <FaCog />, label: "Settings" },
+    // { key: "settings", icon: <FaCog />, label: "Settings" },
     { key: "history", icon: <FaHistory />, label: "History" },
   ];
 

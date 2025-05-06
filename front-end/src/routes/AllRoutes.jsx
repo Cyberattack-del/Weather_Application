@@ -10,6 +10,7 @@ import TravelsandCommuters from "../context/TravelsandCommuters";
 import HistoryPageMenu from "../components/HistoryPageMenu";
 import SettingsMenu from "../components/SettingsMenu";
 import ThemeMenu from "../components/ThemeMenu";
+//import SettingsContext from "../context/SettingsContext";
 
 const AllRoutes = ({
   selectedTheme,
@@ -38,6 +39,7 @@ const AllRoutes = ({
             />
           }
         />
+             
         <Route
           path="notifications"
           element={<NotificationMenu notifications={notifications} />}
