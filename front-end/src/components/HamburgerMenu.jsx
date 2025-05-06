@@ -141,19 +141,14 @@ const HamburgerMenu = ({
       {/* Weather Info */}
       {weather?.main && weather?.weather?.[0] && (
         <div className="weather-info mt-4 p-2 text-sm">
-          <h4>{weather.name}</h4>
+          {/* <h4>{weather.name}</h4>
           <p>
             {weather.main.temp}°C - {weather.weather[0].main}
-          </p>
+          </p> */}
         </div>
       )}
 
-      {/* Notification Message */}
-      {notificationMessage && (
-        <div className="notification-bar mt-2 p-2 bg-yellow-100 rounded text-sm">
-          <strong>Notification:</strong> {notificationMessage}
-        </div>
-      )}
+     
     </div>
   );
 };
